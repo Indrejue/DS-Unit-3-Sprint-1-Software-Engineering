@@ -4,20 +4,18 @@
 import pandas as pd
 import numpy as np 
 
-class MyDataFrame:
-    def __init__(self, df):
-        self.df = df
-
+class MyDataFrame(pd.DataFrame):
+    
     # define a null count function
     def nulls(self):
-        count = self.df.isnull().sum()
+        count = self.isnull().sum()
         return count
 
     #create a date split function.
     def date_split(self):
-        self.df['col'] = self.df.select_dtypes('datetime')
-        self.df['year'] = self.df['col'].dt.year
-        self.df['month'] = self.df['col'].dt.month
-        self.df['day'] = self.df['col'].dt.day
-        self.df = self.df.drop(columns='col')
-        return self.df
+        self['col'] = self.select_dtypes('datetime')
+        self['year'] = self['col'].dt.year
+        self['month'] = self['col'].dt.month
+        self['day'] = self['col'].dt.day
+        self = self.drop(columns='col')
+        return self
