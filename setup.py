@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="example-pkg-Indrejue", # Replace with your own username
+    name="example_pkg_Indrejue", # Replace with your own username
     version="0.0.1",
     author="Antony Farag",
     author_email="antony.Farag1@gmail.com",
