@@ -5,8 +5,6 @@ import pandas as pd
 import numpy as np 
 
 class MyDataFrame(pd.DataFrame):
-
-    #create a df
       
     # define a null count function
     def nulls(self):
@@ -22,14 +20,14 @@ class MyDataFrame(pd.DataFrame):
         self = self.drop(columns='col')
         return self
 
-df1 = pd.read_csv('https://raw.githubusercontent.com/Indrejue/DS-Unit-2-Applied-Modeling/master/data/burritos/burritos.csv', parse_dates=['Date'])
+# df1 = pd.read_csv('https://raw.githubusercontent.com/Indrejue/DS-Unit-2-Applied-Modeling/master/data/burritos/burritos.csv', parse_dates=['Date'])
 
-cols = df1.columns
-values = df1.values
+# cols = df1.columns
+# values = df1.values
 
-testdf = MyDataFrame(columns=cols,data=values)
+# testdf = MyDataFrame(columns=cols,data=values)
 
 # print(testdf.head())
 # print(df1.isnull().sum().sum())
 
-print(testdf.nulls())
+# print(testdf.nulls())
