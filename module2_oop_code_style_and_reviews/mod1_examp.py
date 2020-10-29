@@ -19,15 +19,3 @@ class MyDataFrame(pd.DataFrame):
         self['day'] = self['col'].dt.day
         self = self.drop(columns='col')
         return self
-
-# df1 = pd.read_csv('https://raw.githubusercontent.com/Indrejue/DS-Unit-2-Applied-Modeling/master/data/burritos/burritos.csv', parse_dates=['Date'])
-
-# cols = df1.columns
-# values = df1.values
-
-# testdf = MyDataFrame(columns=cols,data=values)
-
-# print(testdf.head())
-# print(df1.isnull().sum().sum())
-
-# print(testdf.nulls())

@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="example_pkg_Indrejue", # Replace with your own username
-    version="0.0.1",
+    version="0.0.3",
     author="Antony Farag",
     author_email="antony.Farag1@gmail.com",
     description="A small example package",

@@ -7,8 +7,8 @@ class DataFrameTests(unittest.TestCase):
     def setUp(self):
         df1 = pd.read_csv(
             'https://raw.githubusercontent.com/Indrejue/'
-            'DS-Unit-2-Applied-Modeling/master/data/'
-            'burritos/burritos.csv',
+            'DS-Unit-2-Applied-Modeling/master/data/burritos/'
+            'burritos.csv',
             parse_dates=['Date'])
         cols = df1.columns
         values = df1.values
