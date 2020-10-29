@@ -1,5 +1,14 @@
 """OOP examples for module 2"""
 
+import pandas as pd
+import numpy as np
+
+COLORS = ['cyan', 'teal', 'crimson', 'purple', 'fuscia']
+FAV_NUMS = [2.71, 3.141, 7]
+
+def increment(x):
+    return x + 1
+
 class BareMinimumClass:
   pass
 
@@ -25,11 +34,11 @@ class SocialMediaUser:
         self.loc = loc
         self.upvote = int(upvote)
 
-    def recieve_upvote(self, num_upvotes=1):
-        self.upvotes += num_upvotes  
+    def recieve_upvote(self, num_upvote=1):
+        self.upvote += num_upvote  
         
     def is_popular(self):
-        return self.upvotes > 100
+        return self.upvote > 100
 
 class Animal:
     """General Representation of Animals"""
